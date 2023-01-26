@@ -2,20 +2,20 @@
 
 *16 de Enero de 2023*
 
-### <u>Objetivos</u>
+## <u>Objetivos</u>
 
 - **Task 1**: Crear y configurar usuarios de Azure AD.
 - **Task 2**: Crear grupos de Azure AD con pertenencia dinámica y asignada.
 - **Task 3**: Crear un Azure Active Directory (AD) tenant.
 - **Task 4**: Administrar usuarios invitados de Azure AD.
 
-### <u>Diagrama de arquitectura</u>
+## <u>Diagrama de arquitectura</u>
 
 ![](img/lab01.png)
 
-### <u>Instrucciones</u>
+## <u>Instrucciones</u>
 
-#### TASK 1: Crear y configurar usuarios de Azure AD.
+### TASK 1: Crear y configurar usuarios de Azure AD.
 
 1. Iniciamos sesión en el [portal de Azure](https://portal.azure.com/) .
 
@@ -45,7 +45,7 @@
 
 ![03](img/03.png)
 
-7. En la lista de usuarios, hacemos clic en la cuenta de usuario recién creada para mostrar su informacion.
+7. En la lista de usuarios, hacemos clic en la cuenta de usuario recién creada para mostrar su información.
 
 8. Tendremos que copiar el **User Principal Name** ya que lo necesitaremos mas tarde.
 
@@ -77,7 +77,7 @@
 | Job title                  | **System Administrator**      |
 | Department                 | **IT**                        |
 
-#### TASK 2: Crear grupos de Azure AD con pertenencia dinámica y asignada.
+### TASK 2: Crear grupos de Azure AD con pertenencia dinámica y asignada.
 
 1. De vuelta en el Portal de Azure donde iniciamos sesión con nuestra **cuenta de usuario principal** , navegamos de nuevo a **Azure Active Directory** yhacemos clic en **Licenses**.
 
@@ -156,7 +156,7 @@ Tendremos que esperar unos minutos o incluso 24h para ver que se han asignado lo
 
 Pasadas 24h podemos observar como los usuarios se han asignado automáticamente a sus grupos.
 
-`*az104-01a-aduser1 aparecer en IT Cloud Administrator`
+`az104-01a-aduser1 aparecer en IT Cloud Administrator`
 
 ![14](img/14.png)
 
@@ -164,7 +164,7 @@ Pasadas 24h podemos observar como los usuarios se han asignado automáticamente 
 
 ![15](img/15.png)
 
-#### TASK 3: Crear un Azure Active Directory (AD) tenant.
+### TASK 3: Crear un Azure Active Directory (AD) tenant.
 
 1. En Azure Portal, buscamos y seleccionamos **Azure Active Directory** .
 
@@ -196,7 +196,7 @@ Pasadas 24h podemos observar como los usuarios se han asignado automáticamente 
 
    ![task303](img/task303.png)
 
-#### TASK 4: Administrar usuarios invitados de Azure AD.
+### TASK 4: Administrar usuarios invitados de Azure AD.
 
 1. Accedemos a nuestro nuevo tenant (**Costoso Lab**) al cual podemos acceder dandole al boton **Switch**.
 2. Navegamos a **Users - All users** y después hacemos clic en **+ New user** y creamos un nuevo usuario con los siguientes datos:
@@ -238,7 +238,7 @@ Pasadas 24h podemos observar como los usuarios se han asignado automáticamente 
 
     ![task305](img/task305.png)
 
-#### Eliminamos los recursos creados
+## Eliminamos los recursos creados
 
 1. Eliminamos las licencias asignadas a los usuarios anteriormente yendo a **Licenses **> **All Products **> **Azure Active Directory Premium P2** > **Licensed Users** seleccionamos todas las que hemos creado y clicamos en **X Remove license**.
 
